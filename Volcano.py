@@ -24,9 +24,9 @@ df = pd.read_csv(mydataset, encoding="latin")
 df.head()
 
 app = Dash(__name__)
-
+server = app.server
 app.layout = html.Div([
-    html.Header('My Volcano App'),
+    html.Header('My Volcano App por mr'),
     dcc.Dropdown(id="mydropdown",
                  options=df["Type"].unique(),
                  value="Stratovolcano"),
