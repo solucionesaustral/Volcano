@@ -38,7 +38,7 @@ app.layout = html.Div([
 def sync_input(volcano_selection):
   fig = px.scatter_geo(df.loc[df["Type"] == volcano_selection],
                        lat="Latitude",
-                       Lon="Longitude",
+                       lon="Longitude",
                        size="Elev",
                        hover_name="Volcano Name")
   return fig
